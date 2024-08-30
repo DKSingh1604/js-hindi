@@ -23,7 +23,7 @@ const JsUser = {
 
 // Object.freeze(JsUser);//if u do not want it to change
 JsUser.email = "dksingh@gmail.com";
-console.log(JsUser);
+// console.log(JsUser);
 
 
 JsUser.greeting = function(){
@@ -34,7 +34,7 @@ JsUser.greeting2 = function(){
     console.log(`Hello User, ${this.name}, how are you?`);
 }
 
-console.log(JsUser.greeting());
+console.log(JsUser.greeting( ));
 console.log(JsUser.greeting2());
 
 
