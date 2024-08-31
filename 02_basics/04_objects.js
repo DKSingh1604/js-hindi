@@ -7,7 +7,7 @@ tinderUser.id = "123abc";
 tinderUser.name = "Sammy";
 tinderUser.isLoggedIn = false;
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularUser = {
     email: "someone@gmail.com",
@@ -21,7 +21,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname?.userfullname.lastname);
+// console.log(regularUser.fullname?.userfullname.lastname);
 // ? -> is put to apply condition if available do it else not
 
 const obj1 ={
@@ -58,9 +58,31 @@ const users = [
 // console.log(users[0].email);
 // console.log(users[0].id);
 
-console.log(Object.keys(tinderUser));//to get all keys of tinderUser in array format
-console.log(Object.values(tinderUser));//to get all values of tinderUser in array format
-console.log(Object.entries(tinderUser));//to get all keys and corresponding values on array format
+// console.log(Object.keys(tinderUser));//to get all keys of tinderUser in array format
+// console.log(Object.values(tinderUser));//to get all values of tinderUser in array format
+// console.log(Object.entries(tinderUser));//to get all keys and corresponding values on array format
 
 //to know if some property is the class or not
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+//DE-STRUCTURING
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "dksingh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course;
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+//API
+{
+    {},
+    {},
+    {}
+}
