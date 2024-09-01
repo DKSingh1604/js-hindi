@@ -76,10 +76,13 @@ const course = {
 // course.courseInstructor
 
 const {courseInstructor: instructor} = course;
+//type {value to extract} = object;
 
 // console.log(courseInstructor);
 console.log(instructor);
 
+//IN JSON ALL KEYS AND VALUES ARE IN STRING FORMAT
+//JSON - JAVA SCRIPT OBJECT NOTATION
 //API
 {
     {},
