@@ -1,0 +1,51 @@
+//FUNCTIONS
+
+function sayMyNAme(){
+    console.log("d");
+    console.log("e");
+    console.log("v");
+    console.log("k");
+    console.log("a");
+    console.log("r");
+    console.log("a");
+    console.log("n");
+}
+//sayMyNAme()
+
+// function addTwoNumbers(number1, number2){
+//     console.log(number1 + number2);
+// }
+
+
+function addTwoNumbers(number1, number2){
+    // let result = number1 +  number2;
+    // return result;
+
+    return number1 + number2;
+}
+
+// addTwoNumbers(2, 5);//7
+// addTwoNumbers("2", 5);//25
+// addTwoNumbers(2, "5");//25
+// addTwoNumbers("2", "5");//25
+// addTwoNumbers(2, "a");//2a
+
+//PARAMETERS AND ARGUMENTS
+//number1 and number2 are parameters - in function definition
+//2 and 5 are argumnets - in function call
+
+const result = addTwoNumbers(3,5);
+console.log(result);//undefined - if not returned in function
+
+function loginUserMessage(username = "Samader"){
+    if(username == undefined){//(!username)
+        console.log("Plis enter a valid username.");
+        return;
+    }
+    return `${username} just logged in`;
+}
+
+// console.log(loginUserMessage("Devkaransingh"));
+console.log(loginUserMessage());//undefined
+
+
