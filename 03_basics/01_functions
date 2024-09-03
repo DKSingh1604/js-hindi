@@ -35,9 +35,9 @@ function addTwoNumbers(number1, number2){
 //2 and 5 are argumnets - in function call
 
 const result = addTwoNumbers(3,5);
-console.log(result);//undefined - if not returned in function
+// console.log(result);//undefined - if not returned in function
 
-function loginUserMessage(username = "Samader"){
+function loginUserMessage(username = "Samader"){//default value
     if(username == undefined){//(!username)
         console.log("Plis enter a valid username.");
         return;
@@ -46,6 +46,37 @@ function loginUserMessage(username = "Samader"){
 }
 
 // console.log(loginUserMessage("Devkaransingh"));
-console.log(loginUserMessage());//undefined
+// console.log(loginUserMessage("dev"));//undefined
 
 
+function calculateCartPrice(val1, val2, ...num1){//to spread - rest operator or spread operator
+    return num1;    
+}   
+
+// console.log(calculateCartPrice(30));//30
+// console.log(calculateCartPrice(300,400,500));//500
+
+const user = {
+    username: "devkaran",
+    price: 199
+}
+
+function handleObject(anyobject){
+
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+
+}
+
+// handleObject(user);
+handleObject({
+    username: "samder",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function secondValue(){
+    console.log(myNewArray[1]);
+}
+
+secondValue(myNewArray);
